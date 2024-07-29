@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "70324328a0c1ebd0115dee387585147e"
+name = "CT Form R"
+handle = "ct-form-r"
+application_url = "https://composed-needle-dod-extensive.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "hemrajct.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://composed-needle-dod-extensive.trycloudflare.com/auth/callback",
+  "https://composed-needle-dod-extensive.trycloudflare.com/auth/shopify/callback",
+  "https://composed-needle-dod-extensive.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
